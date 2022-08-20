@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font-family: Palatino, URW Palladio L, serif;
+}
+.section-top{
+    position: relative;
+    height: 650px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url('https://www.abbeyupholsterers.com/assets/general/passo-1.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    justify-content: center;
+    animation: change 10s infinite ease-in;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.701);
+    padding: 10px 40px 10px 70px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li.logo{
+    flex: 0.8;
+    color: beige;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 0;
+}
+nav ul li.logo:hover{
+    color: red;
+}
+nav ul div.items{
+    padding: 0 25px;
+    display: inline-flex;
+    line-height: 50px;
+}
+
+/* 1st and 2nd list elements  */
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 12px;
+    color:white;
+
+}
+
+nav ul div.items div#howto, div#review{
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+nav ul div.items div#howto span, div#review span{
+    transition: all 0.3s;
+}
+nav ul div.items div#howto::before, div#review::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+}
+nav ul div.items div#howto:hover::before, div#review:hover::before{
+    opacity: 1;
+    transform: scale(1,1);
+}
+nav ul div.items div#howto::after, div#review::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+nav ul div.items div#howto:hover::after, div#review:hover::after{
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
+
+
+
+/* Log In list element */
+nav ul div.items a#three{
+    font-size: 18px;
+    color: rgb(255, 146, 78);
+}
+nav ul div.items a#three:hover{
+    color: rgb(255, 0, 0);
+}
+nav ul div.items div#log:hover{
+    border:1px solid  rgb(255, 244, 244);
+    border-left: none;
+    border-right: none;
+}
+
+/* Sign Up list element */
+nav ul div.items a#four{
+    color: rgb(19, 88, 215);
+}
+nav ul div.items a#four:hover{
+    color: rgb(98, 200, 255);
+}
+nav ul div.items div#signup:hover{
+    border:1px solid  rgb(255, 244, 244);
+    border-left: none;
+    border-right: none;
+}
+
+/* Search bar and Search buton */
+input[type="search"]{
+    padding: 7px;
+    height: 40px;
+    width: 320px;
+    border: 2px solid rgb(255, 166, 22);
+    border-right: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 5px 0 0 5px;
+}
+button{
+    height: 40px;
+    width: 100px;
+    float: right;
+    background: orange;
+    border: 2px solid orange;
+    color: rgb(0, 15, 49);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 7px;
+    font-family:sans-serif;
+    border: none;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgba(127, 98, 19, 0.885);
+    border: 2px solid orange;
+    border-left: none;
+    color: rgb(255, 242, 223);
+}
+/* 
+https://www.nationalparked.com/wp-content/files/jpg/521/mount-rainier-ohanapecosh-campground-05527.jpg
+https://www.abbeyupholsterers.com/assets/general/passo-1.jpg
+https://www.gannett-cdn.com/-mm-/a5076e7a43a0cec6129489319d0fb728e2cd1814/c=0-264-5184-3193/local/-/media/2017/07/11/Salem/Salem/636353868459517736-Southshore2.jpg?width=3200&height=1680&fit=crop
+@keyframes change{
+    0%{
+    background-image: url('https://www.nps.gov/mora/planyourvisit/images/OhanaCampground2016_CMeleedy_01_web.jpeg');
+    }
+    40%{
+        background-image: url(res2.jpg);
+    }
+    60%{
+        background-image: url(res3.jpg);
+    }
+    80%{
+        background-image: url('https://www.nps.gov/mora/planyourvisit/images/OhanaCampground2016_CMeleedy_01_web.jpeg');
+    }
+    100%{
+        background-image: url(res2.jpg);
+    }
+}
+
+ */
+ /* @keyframes change{
+    50%{
+    background-image: url('https://www.abbeyupholsterers.com/assets/general/passo-1.jpg');
+    }
+    100%{
+        background-image: url('https://www.gannett-cdn.com/-mm-/a5076e7a43a0cec6129489319d0fb728e2cd1814/c=0-264-5184-3193/local/-/media/2017/07/11/Salem/Salem/636353868459517736-Southshore2.jpg?width=3200&height=1680&fit=crop');
+    }
+
+} */
