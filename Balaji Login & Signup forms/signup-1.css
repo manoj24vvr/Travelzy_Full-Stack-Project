@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    position: absolute;
+    left: 0;
+    top: 0;    
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 8px 46%;
+    background-color: #7d2ae8;
+    
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ad82e7;
+    padding: 50px; 
+    padding-top: 100px;  
+}
+
+.container{
+    max-width: 850px;
+    width: 100%;
+    color: #7d2ae8;
+    font-weight: bold;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.container .details{
+    font-size:20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.container .title{
+    font-size: 55px;
+    font-weight: bold;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin: 10px 0 20px 0;
+    width: calc(100% / 2 - 20px);
+    
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    border-radius: 5px;
+    
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.user-details .input-box input:hover{
+    border: 3px solid #7d2ae8;
+}
+
+
+.connections{
+    color: red;
+    text-align: center;
+    position: relative;
+    margin-left: 40%;
+}
+
+.connect-buttons{
+    padding: 10px 120px 10px 120px;
+    text-align: center;
+    font-weight: bold;
+    background: #7d2ae8;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.connect-buttons:hover{
+    color: #7d2ae8;
+    background: white;
+    border: 3px solid #7d2ae8;
+}
+
+.submit,.reset{
+    border-radius: 7px;
+    padding: 0.6em 0.7em;
+    
+    font-size:large;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+}
+.submit{
+    margin-left: 250px;
+}
+.reset{
+    margin-left: 10px;
+}
+
+.submit:hover {
+    background-color: #7d2ae8;
+    color: #fff;
+}
+.reset:hover {
+    background-color: lightblue;
+}
+
+.signin{
+    color: red;
+    text-decoration: none;
+}
+
+.login{
+    color: red;
+    text-decoration: none;
+}

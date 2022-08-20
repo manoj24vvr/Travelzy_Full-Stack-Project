@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'DynaPuff', cursive;
+    /* font-family: "Sofia", sans-serif; */
+    font-weight: 500px;
+}
+/* Heading of Login page */
+.heading1{
+    position: fixed;
+    width: 75%;
+    left: 0;
+    top: 0;    
+    font-size: 40px;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding: 1% 29%;
+    background-color: #dc6504;
+    z-index: 100;
+    margin-left: 200px;
+}
+.body1{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffffc1;
+    padding: 50px; 
+    padding-top: 100px;  
+    
+}
+.container1{
+    max-width: 850px;
+    width: 100%;
+    color: #460c92;
+    background: rgb(255, 255, 255);
+    border: 5px solid #ab5e17c1;
+    padding: 25px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+/* Heading of SignUp page */
+.heading2{
+    position: fixed;
+    width: 75%;
+    left: 0;
+    top: 0;    
+    font-size: 40px;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding: 1% 29%;
+    background-color: #1f73b3;
+    z-index: 100;
+    margin-left: 200px;
+
+}
+
+.body2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffffc1;
+    padding: 50px; 
+    padding-top: 100px;  
+}
+.container2{
+    max-width: 850px;
+    width: 100%;
+    color: #460c92;
+    background: rgb(255, 255, 255);
+    border: 5px solid #001b5bc1;
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+/* -------------------- */
+
+
+
+
+/* -------------------- */
+
+
+.container .details{
+    font-size:20px;
+    color: black;
+}
+
+.container .title{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin: 10px 0 20px 10px;
+    width: calc(100% / 2 - 10px);
+    
+}
+
+.user-details .input-box .details{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 90%;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.user-details1 .input-box input:hover{
+    border: 3px solid #634b33;
+}
+.user-details2 .input-box input:hover{
+    border: 3px solid #225ecd;
+}
+
+
+.connections{
+    color: red;
+    text-align: center;
+    position: relative;
+    margin-left: 23%;
+}
+.connections ul{
+    display: inline-flex;
+}
+.connections ul li{
+    margin: 0 10px;
+}
+
+/* In Login Page */
+.connect-buttons1{
+    padding: 10px 70px 10px 70px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    background: #ff8000a8;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+.connect-buttons1:hover{
+    background: rgba(48, 49, 50, 0.875);
+    color: #ffffff;
+    border: rgb(72, 72, 72);
+    border-radius: 30px;
+}
+
+/* In Signup page */
+.connect-buttons2{
+    padding: 10px 70px 10px 70px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    background: rgba(0, 88, 229, 0.856);
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+.connect-buttons2:hover{
+    background: rgba(48, 49, 50, 0.875);
+    color: #ffffff;
+    border: rgb(72, 72, 72);
+    border-radius: 30px;
+}
+
+.button-input1{
+    position: relative;
+    margin-left: 8%;
+}
+.button-input2{
+    position: relative;
+    margin-left: 5%;
+}
+
+/* ----------------------- */
+.submit,.reset{
+    border-radius: 7px;
+    padding: 0.6em 0.7em;
+    font-size:large;
+    transition-duration: 0.2s;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 17px;
+}
+/* In Login Page */
+.submit1{
+    margin-left: 250px;
+    border-radius: 10px;
+
+}
+.reset1{
+    margin-right: 100px;
+    border-radius: 10px;
+
+}
+
+.submit1:hover {
+    background-color: rgb(245, 145, 63);
+    color: #fff;
+    border-radius: 30px;
+    border: 0;
+}
+.reset1:hover {
+    background-color: rgb(27, 36, 39);
+    color: #fff;
+    border-radius: 30px;
+
+}
+/*  */
+
+.submit2{
+    margin-left: 250px;
+    border-radius: 10px;
+
+}
+.reset2{
+    margin-right: 100px;
+    border-radius: 10px;
+
+}
+
+.submit2:hover {
+    background-color: #1a139eee;
+    color: #fff;
+    border-radius: 30px;
+}
+.reset2:hover {
+    background-color: rgb(27, 36, 39);
+    color: #fff;
+    border-radius: 30px;
+
+}
+
+/* ----------------------- */
+.signup{
+    color: red;
+    text-decoration: none;
+}
+.signup:hover{
+    color: rgb(50, 28, 0);
+}
+.login{
+    color: red;
+    text-decoration: none;
+}
+.login:hover{
+    color: rgb(50, 28, 0);
+}
+.text1{
+    margin: 20px 0 0 38% ;
+}
+.text2{
+    margin: 20px 0 0 34%;
+}
