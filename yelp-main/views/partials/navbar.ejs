@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/" style="font-size: 30px; font-weight:bolder; margin-left: 20px;">Travelzy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <div class="nav-item">
+            <a class="nav-link" href="/New_Project/index.html" style="font-weight: bold;">Home</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="/campgrounds">Places</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="/campgrounds/new">New Place</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/Restaurants_Page/indexRes.html">Restaurants</a>
+          </div>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <% if(!currentUser){ %> 
+            <a href="/login" class="nav-link">
+              <p style="color: rgba(0, 85, 255, 0.827); margin-left: 8px; font-weight: bolder; font-size: 20px;">Login</p>
+            </a>
+            <a href="/register" class="nav-link">
+              <p style="color: rgb(255, 81, 0); margin-left: 8px; font-weight: bolder; font-size: 20px;">Register</p>
+            </a>
+          <% } else{ %> 
+            <a href="/logout" class="nav-link">
+              <button type="button" class="btn btn-outline-warning">Log out</button>
+            </a> 
+          <% } %> 
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">YelpCamp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/campgrounds">Campgrounds</a>
+                <a class="nav-link" href="/campgrounds/new">New Campground</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <% if(!currentUser) {%>
+                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/register">Register</a>
+                <% } else {%>
+                <a class="nav-link" href="/logout">Logout</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</nav> -->
