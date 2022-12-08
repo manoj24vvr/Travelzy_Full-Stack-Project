@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+}
+
+.navbar-toggler{
+    background: rgb(8, 181, 250);
+    border: none;
+    outline: none;
+    
+}
+
+.navbar-toggler span{
+    display: block;
+    width: 20px;
+    height: 22px;
+    border: 1px;       
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    
+    
+    position: relative;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link:active{
+    
+    color: red;
+    background-color: gray;
+}
+

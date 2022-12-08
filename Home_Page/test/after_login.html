@@ -1,0 +1,244 @@
+<!--
+    1. navbar  (login and register buttons are no space in dropdown)
+    2. crousel images
+    3. categories
+    4. About
+    5. footer
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>After Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .timeline{
+            background:whitesmoke;
+        }
+        .about_content{
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark py-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 30px; font-weight:bolder; margin-left: 20px;">
+                <p style="color: white;">Travelzy</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-0 mb-lg-2" style="margin-left: 65%; margin-top:20px; ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="font-weight: bold;">
+                            <p style="color: white; margin-left: 50px;">Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <p style="color: white; margin-left: 10px;">Favourites</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" style="margin-left: 10px;"><button type="button" class="btn btn-outline-warning">Log out</button></a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="Images/image1.jpg" class="d-block w-100" alt="Image-1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color: purple; font-weight: bold;">Welcome to <span style="color: red;">Travelzy</span></h3>
+                    <h5>description</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/image2.jpg" class="d-block w-100" alt="Image-2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color: whitesmoke; font-weight: bold;">Welcome to Travelzy</h3>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/image3.jpg" class="d-block w-100" alt="Image-3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color: whitesmoke; font-weight: bold;">Welcome to Travelzy</h3>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="categories">
+        <h2 style="text-align: center; margin-top: 25px; margin-bottom: 25px;">Categories</h2>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="Images/card_1.jpg" alt="Restaurants" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#"><button type="button" class="btn btn-outline-dark">Restaurants</button></a>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="Images/card_2.jpg" alt="Restaurants" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#"><button type="button" class="btn btn-outline-dark">Places</button></a>
+                            <p class="card-text">Explore Tourist Places</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card" style="height: 18rem;">
+                        <img src="Images/image3.jpg" alt="Restaurants" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#"><button type="button" class="btn btn-outline-dark">Explore</button></a>
+                            <p class="card-text">Other Categories</p>
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+        
+    -->
+
+    
+    
+<!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+                    <p>Travelzy Description</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Categories</h5>
+                    
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration:none;">Restaurants</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration:none;">Tourist Places</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration:none;">Explore More</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Team</h5>
+                    <p>Manoj VVR</p>
+                    <p>Nikith Reddy</p>
+                    <p>Balaji Kartheek</p>
+                    <p>Siddharth Reddy</p>
+                    <p>Chandra Vardhan</p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-3 font-weight-bold text-warning">Contact Us</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>  Manipal, Karnataka
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>  travelzy@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>  +91 9390912345
+                    </p>
+                    
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm " style="font-size: 23px;">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
