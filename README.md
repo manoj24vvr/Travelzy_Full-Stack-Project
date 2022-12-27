@@ -99,7 +99,7 @@ giving the details of that place and a snapshot if possible.
 </p>
 
 * **Restaurants** – this page displays restaurants and can be filtered
-by searching using name or location or cuisine based on user
+by searching using <u>name</u> or <u>location<u/> or <u>cuisine</u> based on user
 choices.
 
 <p align="center">
