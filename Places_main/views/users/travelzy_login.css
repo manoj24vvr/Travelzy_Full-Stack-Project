@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+:root{    
+    --theme: white;
+    --login_header: rgb(240, 240, 11);
+    --connector_background:rgb(8, 182, 251);
+    --glow: rgb(240, 240, 11);
+}
+
+
+
+*{
+    margin:0%;
+    padding: 0%;
+
+}
+
+section{
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+section .left_side{
+    background-color: rgb(53, 53, 53);
+    color: var(--theme);
+    position: relative;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    
+}
+/*
+.border{
+    position: relative;
+    margin: auto;
+    margin-top: 270px;
+    width: 50%;
+    border: 2px solid white;
+    height: 20%;
+    border-radius: 70%;
+    transform: rotate(-8deg);
+    padding: px;
+}
+
+*/
+.title{
+    position: relative;
+    font-size: 60px;
+    margin: auto;
+    width: 50%;
+    margin-top: 50%;
+    top: 300px;
+    font-family: 'Dancing Script', cursive;
+    animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px var(--glow), 0 0 0px var(--glow), 0 0 0px var(--glow), 0 0 1px var(--glow), 0 0 0px var(--glow);
+    }
+    
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 2px var(--glow), 0 0 2px var(--glow), 0 0 2px var(--glow), 0 0 2px var(--glow), 0 0 2px var(--glow), 0 0 2px var(--glow);
+    }
+  }
+/*
+.title{
+    position: relative;
+    top: 300px;
+    border: 2px solid white;
+    padding: 40px 70px;
+    font-size: 40px;
+    border-radius: 70%;
+    margin: auto;
+    transform: rotate(20deg);
+}
+*/
+section .right_side{
+    
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: var(--theme);
+    /*
+    padding: 50px; 
+    padding-top: 100px;
+    */
+}
+
+
+
+.box{
+    /*
+    max-width: 850px;
+    */
+    margin: auto;
+    margin-top: 15%;
+    width: 80%;
+    color: #7d2ae8;
+    font-weight: bold;
+    background: rgb(53, 53, 53);
+    border-radius: 5px;
+    border: 2px solid rgb(53, 53, 53);
+    padding: 30px 0 40px 0;
+}
+
+
+.login_header{
+    color: var(--login_header);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+input{
+    padding-left: 15px;
+    border-radius: 5px;    
+    margin: auto;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 18%;
+    padding: 10px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 10px;
+    height: 50px;
+    margin: auto;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+
+.login{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+    border: 3px solid rgb(240, 240, 11);
+    color: rgb(53, 53, 53);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login:hover{
+    background: rgb(240, 240, 11);
+}
+
+
+.google_button , .facebook_button{
+    margin-top: 20px;
+    padding: 2% 20% 2% 20%;
+    text-align: center;
+    font-weight: bold;
+    background: var(--connector_background);
+    color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+.google_button:hover{
+    color: #000;
+    background: white;
+    border: 3px solid var(--theme);
+}
+
+.facebook_button:hover{
+    color: #000;
+    background: white;
+    border: 3px solid var(--theme);
+}
+
+
